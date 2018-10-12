@@ -46,3 +46,8 @@ while number < 10 {
 8
 9
 ```
+
+処理を〇〇秒送らせる方法
+```swift
+RunLoop.main.run(until: Date(timeIntervalSinceNow: 〇〇))
+```
