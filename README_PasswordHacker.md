@@ -6,7 +6,7 @@
 - `for`文
 
 ```swift
-for i in 0...10 {
+for i in 0..<10 {
   print(i) 
 }
 ```
