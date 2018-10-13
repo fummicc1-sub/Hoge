@@ -119,7 +119,7 @@ self.myMoney = self.kaimono(cost: 500)
 
 ```
 
-
+便利ですね。
 
 
     
