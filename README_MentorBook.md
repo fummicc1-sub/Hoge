@@ -101,6 +101,24 @@ self.kaimono(cost: 500)
 
 便利ですね。
 
+### 戻り値
+
+戻り値とは、メソッドの代表です。例えば先ほどの買い物の例で、買い物という動作をした時にその処理として自分のお金から使ったお金分引いてましたよね。
+これを戻り値を用いて表すと、
+```swift
+
+//costは費用っていう意味だよ
+func kaimono(cost: Int) -> Int {
+
+  // 使った分だけ自分のお金から引こう。
+  return (myMoney - cost)
+
+}
+
+self.myMoney = self.kaimono(cost: 500)
+
+```
+
 
 
 
