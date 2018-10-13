@@ -79,3 +79,4 @@ label.text = String(format: "%02d", number) // 01
 という風に書く。他にも色々あるので興味がある人はぜひ、[【Swift入門】数値を文字列(String)にformatする方法 | 侍エンジニア塾ブログ | プログラミング入門者向け学習情報サイト](https://www.sejuku.net/blog/34872)
 を見てみてほしい！
 
+
