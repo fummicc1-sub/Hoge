@@ -31,9 +31,9 @@ repeats: true または false
 )
 ```
    - 使い方
-   - タイマーの止め方
+      - タイマーの止め方
 `timer.invalidate()`
-   - タイマーが動いているかの確認
+      - タイマーが動いているかの確認
 `timer.isValid`
 
 
