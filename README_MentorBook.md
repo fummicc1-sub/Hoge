@@ -58,9 +58,9 @@ class Car {
 let car = Car()
 car.gasolineMeter = 100
 
-if car.canDrive {
-  drive()
-}
+print(car.canDrive)
+
+car.drive()
 
 ```
 
