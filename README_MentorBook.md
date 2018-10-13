@@ -28,7 +28,7 @@ class Car {
     
     }else {
     
-      true...真の -> 運転できる
+      //true...真の -> 運転できる
       return true
     
     }
