@@ -41,7 +41,7 @@ override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
   - Step2
 
 ```swift
-let imagePicker: UIImagePickerController! //imagePickerの宣言
+let imagePickerController: UIImagePickerController! //imagePickerの宣言
 
 (省略)
 .
@@ -52,6 +52,9 @@ func フォトライブラリを開こう() {
   imagePickerController.sourceType = UIImagePickerController.SourceType.photoLibrary
   imagePickerController.delegate = self
   imagePickerController.allowsEditing = true
+
+  self.present(imagePickerController, animated: true, completion: nil)
+
 }
 
 ```
