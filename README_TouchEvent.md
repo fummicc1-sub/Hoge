@@ -19,6 +19,8 @@ override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 ```swift
 override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
 
+
+
 }
 ```
 
@@ -75,4 +77,18 @@ func フォトライブラリを開こう() {
         dismiss(animated: true, completion: nil)
 
   }
+```
+
+- Step4
+
+```swift
+UIGraphicsBeginImageContext(view.frame.size)
+
+self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+
+let capture = UIGraphicsGetImageFromCurrentImageContext()!
+
+UIGraphicsEndImageContext()
+
+UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil)
 ```
