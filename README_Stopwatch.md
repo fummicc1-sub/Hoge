@@ -5,7 +5,7 @@
     - 書き方
 ```swift
 func メソッドの名前() {
-
+  
 }
 ```
 例
@@ -20,7 +20,7 @@ print(label.textColor)
 - タイマー
     - 目覚ましのタイマーみたいに決まった時間になったら指定したメソッドを呼ぶことができるもの！
     - 書き方
-    
+
 ```swift
 let timer = Timer.scheduledTimer(
 timeInterval: 呼び出す間隔,
@@ -59,7 +59,7 @@ print("9ではないよ")
 
 今回は、`timer.isValid`の左に!がついてるね。否定の`!`はつける位置が決まっていて、否定にしたいものの左側につけるよ。
 
-### なかなかのむずさやで。。(下) 
+### なかなかのむずさやで。。(下)
 
 ## `String`の`format`って？
 
@@ -78,5 +78,3 @@ label.text = String(format: "%02d", number) // 01
 ```
 という風に書く。他にも色々あるので興味がある人はぜひ、[【Swift入門】数値を文字列(String)にformatする方法 | 侍エンジニア塾ブログ | プログラミング入門者向け学習情報サイト](https://www.sejuku.net/blog/34872)
 を見てみてほしい！
-
-
