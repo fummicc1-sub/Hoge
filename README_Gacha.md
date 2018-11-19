@@ -8,7 +8,7 @@
 ## 乱数
 乱数の使い方
 ```swift
-var number: Int = Int(arc4random_uniform(最大値))
+var number: Int = Int(arc4random_uniform(数字))
 ```
 ## `UIImageView`の画像の設定
 コードで書くと
