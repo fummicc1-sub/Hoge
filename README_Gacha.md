@@ -3,13 +3,24 @@
 - 乱数...指定した範囲の中でランダムに生成された数字。
 - ファイルを追加する際に
 - [x] Copy item if needed にチェックを入れる！
-- 1つの`swift`ファイルに1つの画面が基本！
+- 1つの`swift`ファイルに1つの画面(`ViewController`)が基本！
 - コードと画面は違う世界。繋げることを忘れずに。
 ## 乱数
 乱数の使い方
 ```swift
-var number: Int = Int(arc4random_uniform(数字))
+var number: Int = Int(arc4random_uniform(最大値+1))
 ```
+
+### (最大値+1)について
+整数の場合、数字は以下の例のように決める。
+  - 0から9の数字の中でランダムに１つ数字を発生させたい。
+  - 最大値は9なので9+1の10を()の中に書く！
+  - つまり**0から9の数字の中でランダムに１つ数字を発生させる**コードは
+    ```swift
+      var number = Int(arc4random_uniform(10))
+    ```
+  となる。
+
 ## `UIImageView`の画像の設定
 コードで書くと
 ```swift

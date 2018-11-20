@@ -1,18 +1,12 @@
 # メモ帳
 ## ここだけは抑えたい。
 
-### .swiftファイルの作成方法
+### .swiftファイルの作成方法 (`New File`をタップ後の話)
 - ViewControllerのファイルを作る時...`Cocoa Touch Class`を選択しよう
 - オリジナルのクラスを作る時...`Swift File`を選択しよう
 
 ### UserDefaults
 一言で言うとデータの保存を行うためのもの。特にユーザーが自分で入力したデータを保存したりするよ。情報の倉庫(データベース)と呼ばれてるよ。
-
-**UserDefaultsの使い方3ステップ**
-
-  1. データベースを作る(UserDefaultsを宣言する)
-  2. データベースに値を保存する。
-  3. データベースの値を取り出す。
 
 - データベースの作り方
 ```swift
@@ -28,11 +22,6 @@ database.set(保存したい値, forKey: "鍵(パスワード)")
 変数 = database.object(forKey: "鍵(パスワード)")
 ```
 ### アラート
-アラートの使い方3ステップ
-1. アラートを作る
-2. ボタンを作る
-3. アラートを表示させる
-
 - アラートの作り方
 ```swift
 let alert = UIAlertController(title: "タイトル", message: "本文", preferredStyle: .alert)
@@ -43,7 +32,7 @@ let alert = UIAlertController(title: "タイトル", message: "本文", preferre
 alert.addAction(UIAlertAction(
   title: "",
   style: .default,
-  handler: nil
+  handler: nil     //実はここはケースバイケース
   ))
 ```
 
